@@ -6,7 +6,11 @@
 - QtDesigner 학습
 - Naver API 뉴스검색 앱 만들기
 
+<!-- 사이즈 조정 불가능!
 ![네이버 뉴스 앱](https://raw.githubusercontent.com/yeseoz/miniprojects/main/imges/navernews.png)
+-->
+
+<img src="https://raw.githubusercontent.com/yeseoz/miniprojects/main/imges/navernews.png" width="600" />
 
 ### DB 연동 GUI 프로그램 개발 학습
 
