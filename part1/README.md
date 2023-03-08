@@ -14,7 +14,7 @@
 ![네이버 뉴스 앱](https://raw.githubusercontent.com/yeseoz/miniprojects/main/imges/navernews.png)
 -->
 
-<img src="https://raw.githubusercontent.com/yeseoz/miniprojects/main/imges/navernews.png" width="600" />
+<img src="https://raw.githubusercontent.com/yeseoz/miniprojects/main/imges/navernews.png" width="650" />
 
 ### DB 연동 GUI 프로그램 개발 학습
 
