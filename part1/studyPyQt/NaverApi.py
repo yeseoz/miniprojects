@@ -7,7 +7,7 @@ import json # 결과는 json으로 받기
 class NaverApi:
     # 생성자
     def __init__(self) -> None:
-        print('Naver API 생성')
+        print(f'[{datetime.datetime.now()}] Naver API 생성')
 
     # Naver API를 호출 (중요!!)
     def get_request_url(self,url):
@@ -43,7 +43,7 @@ class NaverApi:
             return json.loads(retData) # json으로 return
 
     # json 데이터 --> list로 변환
-    def get_post_data(self, post, outputs):
+    #def get_post_data(self, post, outputs) -> None:
         title = post['tilte']
         discription = post['discription']
         originallink = post['originallink']
@@ -54,3 +54,6 @@ class NaverApi:
         pubDate = pDate.strftimme('%Y-%m-%d %H:%M:%S') # 2023-03-07 17:04:00 변경
 
         # output에 옮기기
+        outputs.append({'title':title, 'discription':discription,
+                         'originallink':originallink, 'link':link,
+                         'pubDate':pubDate})
