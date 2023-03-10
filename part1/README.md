@@ -25,7 +25,15 @@
 <img src="https://raw.githubusercontent.com/yeseoz/miniprojects/main/imges/navermovie.png" width="650">
 
 ### DB 연동 GUI 프로그램 개발 학습
+- 주소록 프로그램 만들기
+    - Python 3.11.2
+    - MySQL 8.0 연동
+    - pymsql 모듈 사용
+    - PyQt5 / Qt Designer
 
+    <img src="https://raw.githubusercontent.com/yeseoz/miniprojects/main/imges/addressbook.png" width="650">
+    <img src="https://raw.githubusercontent.com/yeseoz/miniprojects/main/imges/addressbook_save.png" width="650">
+    <img src="https://raw.githubusercontent.com/yeseoz/miniprojects/main/imges/addressbook_del.png" width="650">
 
 
 ### 미니프로젝트 실습

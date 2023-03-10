@@ -197,7 +197,7 @@
          <string>저장</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="btnNew_2">
+       <widget class="QPushButton" name="btnDel">
         <property name="geometry">
          <rect>
           <x>480</x>
