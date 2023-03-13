@@ -36,4 +36,19 @@
     <img src="https://raw.githubusercontent.com/yeseoz/miniprojects/main/imges/addressbook_del.png" width="650">
 
 
+## 파이썬 관련 추가학습
+- QR 코드 생성 앱
+    - qrcode 모듈 
+    - PyQt
+
+<img src="https://raw.githubusercontent.com/yeseoz/miniprojects/main/imges/qrcode.png" width="650">
+
+- 컴퓨터 정보출력 앱
+    - psutil 모듈
+    - socket 모듈
+    - requests 모듈
+    - pyQt
+
+    <img src="https://raw.githubusercontent.com/yeseoz/miniprojects/main/imges/cominfoapp.png" width="650">
+
 ### 미니프로젝트 실습
