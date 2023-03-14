@@ -51,4 +51,15 @@
 
     <img src="https://raw.githubusercontent.com/yeseoz/miniprojects/main/imges/cominfoapp.png" width="650">
 
+- TTS(Text To Speach)
+    - gtts 모듈
+    - playsound 모듈
+
+    <img src="https://raw.githubusercontent.com/yeseoz/miniprojects/main/imges/ttsapp.png" width="650">
+
+- 암호해제 프로그램
+    - itertools, zipfile 기본 모듈
+    
+
+
 ### 미니프로젝트 실습
