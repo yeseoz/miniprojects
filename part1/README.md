@@ -71,6 +71,6 @@
 
 
 - 이메일 보내기앱
-[이메일 보내기](https://raw.githubusercontent.com/yeseoz/miniprojects/main/imges/email.png)
+![이메일 보내기](https://raw.githubusercontent.com/yeseoz/miniprojects/main/imges/email.png)
 
 ### 미니프로젝트 실습
