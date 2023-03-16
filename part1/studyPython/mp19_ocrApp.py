@@ -5,7 +5,7 @@
 from PIL import Image
 import pytesseract as tess
 
-img_path = './studyPython/한글이미지.png'
+img_path = './studyPython/한글이미지.png '
 tess.pytesseract.tesseract_cmd = 'C:/DEV/Tools/Tesseract-OCR/tesseract.exe' # https://github.com/tesseract-ocr/tessdata
 
 result = tess.image_to_string(Image.open(img_path), lang = 'kor')
