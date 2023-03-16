@@ -71,6 +71,7 @@
 
 
 - 이메일 보내기앱
-![이메일 보내기](https://raw.githubusercontent.com/yeseoz/miniprojects/main/imges/email.png)
+[이메일 보내기](https://raw.githubusercontent.com/yeseoz/miniprojects/main/imges/email.png)
 
 ### 미니프로젝트 실습
+[팀 리포지토리](https://github.com/annual-salary-investigation/sandwich)
