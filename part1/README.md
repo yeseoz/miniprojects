@@ -83,6 +83,15 @@
     
     <img src="https://raw.githubusercontent.com/yeseoz/miniprojects/main/imges/dinogame_start.png" width="550">
 
+- 전국 대학교
+
+
+- 계산기 앱
+    - PyQt
+    - 16개 siganl을 1개의 slot 함수로 처리
+
+     <img src="https://raw.githubusercontent.com/yeseoz/miniprojects/main/imges/calcapp.png" width="250">
+
     
     
     
