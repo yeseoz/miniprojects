@@ -78,8 +78,10 @@
     - PyGame
 
     <img src="https://raw.githubusercontent.com/yeseoz/miniprojects/main/imges/game1.png" width="550">
-    <img src="https://raw.githubusercontent.com/yeseoz/miniprojects/main/imges/dinogame_start.png" width="550">
+    
     <img src="https://raw.githubusercontent.com/yeseoz/miniprojects/main/imges/dinogame_dead.png" width="550">
+    
+    <img src="https://raw.githubusercontent.com/yeseoz/miniprojects/main/imges/dinogame_start.png" width="550">
 
     
     
