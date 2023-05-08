@@ -1,4 +1,5 @@
 ﻿using MahApps.Metro.Controls;
+using MySql.Data.MySqlClient;
 using Newtonsoft.Json;
 using SmartHomeMonitoringApp.Logics;
 using System;
@@ -74,6 +75,7 @@ namespace SmartHomeMonitoringApp.Views
 
         private void UpdateLog(string msg)
         {
+            // 예외처리 필요
             this.Invoke(() =>
             {
                 TxtLog.Text += $"{msg}\n";
@@ -95,12 +97,39 @@ namespace SmartHomeMonitoringApp.Views
             var currValue = JsonConvert.DeserializeObject<Dictionary<string, string>>(msg);
             if(currValue != null)
             {
-                Debug.WriteLine(currValue["Home_Id"]);
-                Debug.WriteLine(currValue["Room_Name"]);
-                Debug.WriteLine(currValue["Sensing_DateTime"]);
-                Debug.WriteLine(currValue["Temp"]);
-                Debug.WriteLine(currValue["Humid"]);
+                //Debug.WriteLine(currValue["Home_Id"]);
+                //Debug.WriteLine(currValue["Room_Name"]);
+                //Debug.WriteLine(currValue["Sensing_DateTime"]);
+                //Debug.WriteLine(currValue["Temp"]);
+                //Debug.WriteLine(currValue["Humid"]);
 
+                try
+                {
+                    using(MySqlConnection conn = new MySqlConnection(Commons.MYSQL_CONNSTRING))
+                    {
+                        if(conn.State == System.Data.ConnectionState.Closed)
+                        {
+                            conn.Open();
+                        }
+                        string insQuery = "INSERT INTO smarthomesensor ...";
+
+                        MySqlCommand cmd = new MySqlCommand(insQuery, conn);
+                        cmd.Parameters.AddWithValue("@Home_Id", currValue["Home_Id"]);
+                        //... 파라미터 다섯개
+                        if(cmd.ExecuteNonQuery() ==1)
+                        {
+                            UpdateLog(">>>DB Insert succeed.");
+                        }
+                        else
+                        {
+                            UpdateLog("DB Insert failed."); // 일어날일이 거의 없음
+                        }
+                    }
+                }
+                catch(Exception ex)
+                {
+                    UpdateLog($"!!! Error 발생 : {ex.Message}");
+                }
             }
         }
     }
