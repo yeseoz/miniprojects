@@ -8,7 +8,7 @@
     xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
     xmlns:local="clr-namespace:SmartHomeMonitoringApp"
     mc:Ignorable="d"
-    Title="SmartHome Monitoring System" Height="450" Width="800" Loaded="MetroWindow_Loaded">
+    Title="SmartHome Monitoring System" Height="450" Width="800" Loaded="MetroWindow_Loaded" WindowStartupLocation="CenterScreen">
     <mah:MetroWindow.IconTemplate>
         <DataTemplate>
             <iconPacks:PackIconSimpleIcons Kind="HomeAssistant" Width="24"
@@ -30,7 +30,7 @@
                         <iconPacks:PackIconJamIcons Kind="FileF" />
                     </MenuItem.Icon>
 
-                    <MenuItem x:Name="MnuStartSubscribe" Header="시작">
+                    <MenuItem x:Name="MnuStartSubscribe" Header="시작" Click="MnuStartSubscribe_Click">
                         <MenuItem.Icon>
                             <iconPacks:PackIconJamIcons Kind="PlayCircleF" />
                         </MenuItem.Icon>
