@@ -8,7 +8,9 @@
     xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
     xmlns:local="clr-namespace:SmartHomeMonitoringApp"
     mc:Ignorable="d"
-    Title="SmartHome Monitoring System" Height="450" Width="800" Loaded="MetroWindow_Loaded" WindowStartupLocation="CenterScreen">
+    Title="SmartHome Monitoring System" Height="450" Width="800" Loaded="MetroWindow_Loaded"
+    MinHeight="450" MinWidth="670"
+    Closing ="MetroWindow_Closing" WindowStartupLocation="CenterScreen">
     <mah:MetroWindow.IconTemplate>
         <DataTemplate>
             <iconPacks:PackIconSimpleIcons Kind="HomeAssistant" Width="24"
@@ -88,15 +90,15 @@
 
             <ToolBarTray>
                 <ToolBar Style="{StaticResource MahApps.Styles.ToolBar}">
-                    <Button x:Name="BtnStartSubscribe" ToolTip="구독 시작">
+                    <Button x:Name="BtnStartSubscribe" ToolTip="구독 시작" Click="MnuStartSubscribe_Click">
                         <iconPacks:PackIconJamIcons Kind="PlayCircleF" />
                     </Button>
-                    <Button x:Name="BtnStopSubscribe" ToolTip="구독 중지">
+                    <!--<Button x:Name="BtnStopSubscribe" ToolTip="구독 중지">
                         <iconPacks:PackIconBootstrapIcons Kind="PauseCircleFill" />
-                    </Button>
+                    </Button>-->
                     <Separator />
-                    <Button x:Name="BtnExitProgram" ToolTip="프로그램 끝내기">
-                        <iconPacks:PackIconForkAwesome Kind="SignOut" />
+                    <Button x:Name="BtnExitProgram" ToolTip="프로그램 끝내기" Click="BtnExitProgram_Click">
+                        <iconPacks:PackIconForkAwesome Kind="SignOut"/>
                     </Button>
                 </ToolBar>
             </ToolBarTray>

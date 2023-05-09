@@ -55,8 +55,8 @@
             <TextBox Grid.Row="2" Grid.Column="1" x:Name="TxtConnString" Text="MySQL 연결문자열"
                        FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"
                        Margin="10,0"/>
-            <ToggleButton Grid.Row="3" Grid.Column="1" x:Name="BtnConnDb" Content="Connect"
-                          Width ="100" HorizontalAlignment="Left" Margin="10,5"
+            <ToggleButton Grid.Row="3" Grid.Column="1" x:Name="BtnConnDb" Content="MQTT 연결종료"
+                          Width ="150" HorizontalAlignment="Left" Margin="10,5"
                           Style="{StaticResource MahApps.Styles.ToggleButton.Flat}" Click="BtnConnDb_Click"/>
             <TextBox Grid.Row="4" Grid.Column="1" x:Name="TxtLog" Margin="10,5"
                      TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Visible" FontSize="12"/>

@@ -10,7 +10,7 @@ namespace SmartHomeMonitoringApp.Logics
         public static string MYSQL_CONNSTRING { get; set; } = "Server=localhost;" +
                                                               "Port=3306;" +
                                                               "Database=miniproject;" +
-                                                              "Uid=root" +
+                                                              "Uid=root;" +
                                                               "Pwd=12345";
 
         // MQTT 클라이언트 공용 객체
