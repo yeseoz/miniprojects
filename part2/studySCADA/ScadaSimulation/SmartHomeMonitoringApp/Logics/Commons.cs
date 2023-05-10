@@ -13,7 +13,7 @@ namespace SmartHomeMonitoringApp.Logics
                                                               "Uid=root;" +
                                                               "Pwd=12345";
 
-        // MQTT 클라이언트 공용 객체
+        // MQTT 클라이언트 공용 객체(DB모니터링에도 쓰고 RealTime에도 쓸꺼라서 공용으로 만듬)
         public static MqttClient MQTT_CLIENT { get; set; }
     }
 }
