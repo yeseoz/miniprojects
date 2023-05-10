@@ -5,6 +5,7 @@ using SmartHomeMonitoringApp.Logics;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading;
 using System.Windows.Controls;
@@ -33,10 +34,24 @@ namespace SmartHomeMonitoringApp.Views
 
             IsConnected = false; // 아직 접속이 안되었음
             BtnConnDb.IsChecked = false;
+
+            // 실시간 모니터링에서 넘어왔을 때
+            if(Commons.MQTT_CLIENT !=null && Commons.MQTT_CLIENT.IsConnected)
+            {
+                IsConnected = true;
+                BtnConnDb.Content = "MQTT 연결중";
+                BtnConnDb.IsChecked = true;
+                Commons.MQTT_CLIENT.MqttMsgPublishReceived += MQTT_CLIENT_MqttMsgPublishReceived;
+            }
         }
 
         // 토글버튼 클릭(1: 접속 /2: 접속 끊김) 이벤트 핸들러
         private void BtnConnDb_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            ConnectDB();
+        }
+
+        private void ConnectDB()
         {
             if (IsConnected == false)
             {
@@ -61,7 +76,7 @@ namespace SmartHomeMonitoringApp.Views
 
                     }
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     UpdateLog($"!!! MQTT Error 발생 : {ex.Message}");
                 }
@@ -71,7 +86,7 @@ namespace SmartHomeMonitoringApp.Views
             {
                 try
                 {
-                    if(Commons.MQTT_CLIENT.IsConnected)
+                    if (Commons.MQTT_CLIENT.IsConnected)
                     {
                         Commons.MQTT_CLIENT.MqttMsgPublishReceived -= MQTT_CLIENT_MqttMsgPublishReceived;
                         Commons.MQTT_CLIENT.Disconnect(); // 접속 끊는다 잠시
@@ -81,7 +96,7 @@ namespace SmartHomeMonitoringApp.Views
                         BtnConnDb.Content = "MQTT 연결종료";
                     }
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     UpdateLog($"!!! MQTT Error 발생 : {ex.Message}");
                 }

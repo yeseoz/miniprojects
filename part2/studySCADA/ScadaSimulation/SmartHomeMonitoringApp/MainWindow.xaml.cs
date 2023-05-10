@@ -102,7 +102,8 @@ namespace SmartHomeMonitoringApp
 
         private void MnuVisualizationMon_Click(object sender, RoutedEventArgs e)
         {
-
+            ActiveItem.Content=new Views.VisualizationControl();
+            StsSelScreen.Content = "Visualization View";
         }
     }
 }
