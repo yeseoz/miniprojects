@@ -20,3 +20,5 @@
 	
 - SmartHome 앱
 <img src="https://raw.githubusercontent.com/yeseoz/miniprojects/main/imges/SmartHome.gif" width="650" />
+
+<img src="https://raw.githubusercontent.com/yeseoz/miniprojects/main/imges/SmartHomeimg.png" width="650" />
