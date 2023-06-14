@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeIotDeviceApp", "FakeIot
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartHomeMonitoringApp", "SmartHomeMonitoringApp\SmartHomeMonitoringApp.csproj", "{DBB07988-7B84-45C3-98FD-33F9DB4FA41A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RaspberryPi 연결 테스트용", "RaspberryPi 연결 테스트용", "{7C227B62-60FA-4B79-ACF8-31F9C00743CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RpiMonitoringApp", "RpiMonitoringApp\RpiMonitoringApp.csproj", "{901851BD-DBD6-48A6-BE8F-64582B628CD7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,10 @@ Global
 		{DBB07988-7B84-45C3-98FD-33F9DB4FA41A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBB07988-7B84-45C3-98FD-33F9DB4FA41A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBB07988-7B84-45C3-98FD-33F9DB4FA41A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{901851BD-DBD6-48A6-BE8F-64582B628CD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{901851BD-DBD6-48A6-BE8F-64582B628CD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{901851BD-DBD6-48A6-BE8F-64582B628CD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{901851BD-DBD6-48A6-BE8F-64582B628CD7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +49,7 @@ Global
 		{B565EBC3-0218-43C5-A7D9-8BE1CF6DE619} = {D00F990F-6362-44BC-A6DA-88C7F83AD282}
 		{BA440734-3B5D-4DBB-BC03-84AA5C227D5E} = {AE986BC6-B6FE-415D-93CF-C709576B2DF7}
 		{DBB07988-7B84-45C3-98FD-33F9DB4FA41A} = {0A371DF0-9B88-473C-AF15-544950DA85D6}
+		{901851BD-DBD6-48A6-BE8F-64582B628CD7} = {7C227B62-60FA-4B79-ACF8-31F9C00743CF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D356558E-3AB8-458B-835E-87F406A8DD5A}

@@ -8,7 +8,7 @@
     xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
     xmlns:local="clr-namespace:SmartHomeMonitoringApp"
     mc:Ignorable="d"
-    Title="SmartHome Monitoring System" Height="450" Width="800" Loaded="MetroWindow_Loaded"
+    Title="RaspberryPI Monitoring System" Height="450" Width="800" Loaded="MetroWindow_Loaded"
     MinHeight="450" MinWidth="670"
     Closing ="MetroWindow_Closing" WindowStartupLocation="CenterScreen">
     <mah:MetroWindow.IconTemplate>
